@@ -1,0 +1,37 @@
+body, html {
+    height: 100%;
+}
+
+.bg {   
+    background:linear-gradient(aliceblue,bisque);
+    height: 100%;
+}
+
+.clock {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border: 5px solid white;
+    margin: auto;
+    margin-top: -35%;
+    background: #2a85d4;
+    border-radius: 50%;
+}
+
+.hand {
+    position: absolute;
+    left: 50%;
+    height: 130px;
+    width: 5px;
+    background: black;
+    margin: auto;
+}
+
+.second,
+.minute,
+.hour {
+    transform: rotate(0deg);
+    transition: all 0.5s;
+    transform-origin: 50% 100%;
+    transition-timing-function: cubic-bezier(0.54, -0.1, 0, 4.04);
+}
