@@ -6,7 +6,11 @@ function setDate() {
     const date = new Date;
     const second = date.getSeconds();
     const secondDegree = ((second / 60) * 360);
-    secondHand.style.transform = `rotate(${secondDegree}deg)`;
+    console.log(secondDegree);
+    if (secondDegree !== 0) {
+        secondHand.style.transform = `rotate(${secondDegree}deg)`;
+    };
+    
     const minute = date.getMinutes();
     const minuteDegree = ((minute / 60) * 360);
     minuteHand.style.transform = `rotate(${minuteDegree}deg)`;
@@ -21,9 +25,3 @@ setInterval(() => {
     setDate();
 }, 1000);
 
-
-
-
-// secondTick();
-// minuteTick();
-// hourTick();
