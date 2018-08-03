@@ -11,9 +11,9 @@ body, html {
     position: relative;
     height: 300px;
     width: 300px;
-    border: 5px solid white;
+    border: 10px solid white;
     margin: auto;
-    margin-top: -35%;
+    margin-top: -50%;
     background: #2a85d4;
     border-radius: 50%;
 }
@@ -32,8 +32,10 @@ body, html {
     margin-top: 20px;
 }
 
+
 .hand.second {
     background: red;
+    width: 3px;
 }
 
 .second,
@@ -45,7 +47,13 @@ body, html {
     transition-timing-function: cubic-bezier(0.54, -0.1, 0, 4.04);
 }
 
-.numbers {
+/* .numbers {
     color: black;
     transform: rotate(30deg);
+} */
+
+img {
+    width: 100%;
 }
+
+
