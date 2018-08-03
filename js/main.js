@@ -6,20 +6,21 @@ function setDate() {
     const date = new Date;
     const second = date.getSeconds();
     const secondDegree = ((second / 60) * 360);
-    console.log(secondDegree);
-    if (secondDegree !== 0) {
-        secondHand.style.transform = `rotate(${secondDegree}deg)`;
-    };
-    
+    console.log(second);
+    secondHand.style.transform = `rotate(${secondDegree}deg)`;
     const minute = date.getMinutes();
     const minuteDegree = ((minute / 60) * 360);
     minuteHand.style.transform = `rotate(${minuteDegree}deg)`;
     const hour = date.getHours();
     const hourDegree = ((hour / 12) * 360);
     hourHand.style.transform = `rotate(${hourDegree}deg)`;
+};
 
-}
-
+for (var i = 1; i < 13; i++) {
+    const numbers = document.getElementsByClassName('numbers');
+    numbers.innerHTML = i;
+    console.log(i);
+};
 
 setInterval(() => {
     setDate();

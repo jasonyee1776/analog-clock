@@ -44,3 +44,8 @@ body, html {
     transform-origin: 50% 100%;
     transition-timing-function: cubic-bezier(0.54, -0.1, 0, 4.04);
 }
+
+.numbers {
+    color: black;
+    transform: rotate(30deg);
+}
